@@ -1,7 +1,7 @@
 model MassEquation
   # An abstract model of cell mass dependent of cell growth rate.
 
-  input
+  species # input
     # Growth rate (1/min).
     mu
   end
@@ -12,3 +12,6 @@ model MassEquation
   end
 end
 
+standalone
+  eq = MassEquation()
+end

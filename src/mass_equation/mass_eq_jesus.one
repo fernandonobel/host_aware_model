@@ -1,4 +1,4 @@
-import './mass_equation.onemodel'
+import mass_equation
 
 model MassEqJesus(MassEquation)
   # This model was developed by jesus in the ACS paper.
