@@ -1,7 +1,7 @@
-from ..host_aware_model.protein_constitutive import ProteinConstitutive
-from ..host_aware_model.protein_ribosomal import ProteinRibosomal
-from ..host_aware_model.protein_non_ribosomal import ProteinNonRibosomal
-from ..host_aware_model.host_aware_model import HostAwareModel
+from protein_constitutive import ProteinConstitutive
+from protein_ribosomal import ProteinRibosomal
+from protein_non_ribosomal import ProteinNonRibosomal
+from host_aware_model import HostAwareModel
  
 model OneProtein
 
@@ -27,8 +27,8 @@ model OneProtein
 end
 
 standalone
-  from ..mass_equation.mass_equation import MassEquation
-  from ..mass_equation.mass_interpolated import MassInterpolated
+  from mass_equation import MassEquation
+  from mass_interpolated import MassInterpolated
   
   mass = MassInterpolated()
   cell = OneProtein()

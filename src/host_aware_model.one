@@ -78,8 +78,8 @@ end
 
 standalone
   from protein_constitutive import ProteinConstitutive
-  from ..mass_equation.mass_equation import MassEquation
-  from ..mass_equation.mass_interpolated import MassInterpolated
+  from mass_equation import MassEquation
+  from mass_interpolated import MassInterpolated
 
   cell = HostAwareModel()
   mass = MassInterpolated()
