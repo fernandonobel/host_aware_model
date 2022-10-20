@@ -1,7 +1,9 @@
-import mass_equation
+from mass_equation import MassEquation
 
-model MassInterpolated(MassEquation)
+model MassInterpolated
   # This model was obtained by interpolaing the experimental data.
+
+  extends MassEquation
 
   parameter
     # First coefficient of mass equation (fg/cell/minute^2).

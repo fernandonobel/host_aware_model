@@ -1,7 +1,9 @@
-import mass_equation
+from mass_equation import MassEquation
 
-model MassEqJesus(MassEquation)
+model MassEqJesus
   # This model was developed by jesus in the ACS paper.
+
+  extends MassEquation
 
   parameter
     # (fg/cell).
