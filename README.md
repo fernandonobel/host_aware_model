@@ -2,25 +2,46 @@
 
 ## Files and folder structure
 
-./build/ -- The folder where OneModel stores the auto-generated Matlab
-implementations of the host-aware model. Do not make changes to the files
-inside this folder, as they will be overwritten if we use OneModel to generate
-new implementations of the host-aware model.
+- `./build` 
 
-./data/ -- Here I save scripts with the data for performing simulations.
+  The folder where OneModel stores the auto-generated Matlab implementations of
+  the host-aware model. Do not make changes to the files inside this folder, as
+  they will be overwritten if we use OneModel to generate new implementations
+  of the host-aware model.
 
-./figs/ -- I use this folder to store the simulations figures.
+- `./matlab`
 
-./model/ -- This folder stores the OneModel models that we use to generate the
-Matlab code.
+  Matlab code for running the model.
 
-./utils/ -- This folder stores auxiliary scripts and functions.
+- `./matlab/data`
+ 
+  Here I save scripts with the data for performing simulations.
 
-./initialize.m -- You need to call this script at the beginnign to setup the
-path in Matlab.
+- `./matlab/figs`
+ 
+  I use this folder to store the simulations figures.
 
-./simulateMassDistribution.m -- A test simulation for validating that the
-host-aware model is okey.
+- `./matlab/utils`
+  
+  This folder stores auxiliary scripts and functions.
 
-./example_oneprotein.m -- An example script of simulating the host-aware model
-with the expression of one exogenous protein.
+- `./matlab/initialize.m`
+  
+  You need to call this script at the beginnign to setup thepath in Matlab.
+
+- `./matlab/simulateMassDistribution.m`
+ 
+  A test simulation for validating that the host-aware model is okey.
+
+- `./matlab/example_oneprotein.m`
+  
+  An example script of simulating the host-aware model with the expression of
+  one exogenous protein.
+
+- `./src`
+
+  This folder stores the OneModel models that we use to generate the Matlab
+  code.
+
+
+
