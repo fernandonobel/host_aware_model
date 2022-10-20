@@ -9,7 +9,7 @@ model ProteinConstitutive
   # allow to quickly simulate, you will have to override them with your own
   # values.
 
-  input
+  species # input
     # Effective translation rate per ribosome (aa/minute).
     nu_t
     # Growth rate (1/minute).

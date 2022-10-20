@@ -1,7 +1,9 @@
-import './protein_constitutive.onemodel'
+from protein_constitutive import ProteinConstitutive
 
-model ProteinNonRibosomal (ProteinConstitutive)
+model ProteinNonRibosomal
   # Model of average expression of non-ribosomal proteins in E.coli.
+
+  extends ProteinConstitutive
 
   parameter
     N = 1735 
@@ -22,7 +24,7 @@ model ProteinNonRibosomal (ProteinConstitutive)
 end
 
 standalone
-  no_ribo = NonRibosomalProtein() 
+  no_ribo = ProteinNonRibosomal() 
 
   rule
     no_ribo.nu_t := 1

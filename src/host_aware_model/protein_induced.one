@@ -1,9 +1,11 @@
-import './protein_constitutive.onemodel'
+from protein_constitutive import ProteinConstitutive
 
-model ProteinInduced (ProteinConstitutive)
+model ProteinInduced
   # This model defines induced protein expression.
 
-  input
+  extends ProteinConstitutive
+
+  species # input
     # Trascription factor (molec/cell).
     TF
   end

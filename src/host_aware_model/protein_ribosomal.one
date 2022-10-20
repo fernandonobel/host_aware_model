@@ -1,7 +1,9 @@
-import './protein_constitutive.onemodel'
+from protein_constitutive import ProteinConstitutive
 
-model ProteinRibosomal (ProteinConstitutive)
+model ProteinRibosomal
   # Model of average expression of ribosomal proteins in E.coli.
+
+  extends ProteinConstitutive
 
   parameter
     N = 55 
@@ -28,7 +30,7 @@ model ProteinRibosomal (ProteinConstitutive)
 end
 
 standalone
-  ribo = RibosomalProtein() 
+  ribo = ProteinRibosomal() 
 
   rule
     ribo.nu_t := 1
