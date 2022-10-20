@@ -5,9 +5,9 @@ model ProteinInduced
 
   extends ProteinConstitutive
 
-  species # input
+  species
     # Trascription factor (molec/cell).
-    TF
+    input TF
   end
 
   parameter

@@ -4,11 +4,11 @@ from protein_non_ribosomal import ProteinNonRibosomal
 model HostAwareModel
   # Model of a wild-type E.coli. cell.
 
-  species # input
+  species
     # Concentration of substrate in the bioreactor (grams/litre).
-    s
+    input s
     # Total host protein mass (fg/cell).
-    m_h
+    input m_h
   end
 
   p_r  = ProteinRibosomal()

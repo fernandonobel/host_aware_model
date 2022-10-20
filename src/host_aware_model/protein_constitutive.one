@@ -9,17 +9,17 @@ model ProteinConstitutive
   # allow to quickly simulate, you will have to override them with your own
   # values.
 
-  species # input
+  species
     # Effective translation rate per ribosome (aa/minute).
-    nu_t
+    input nu_t
     # Growth rate (1/minute).
-    mu
+    input mu
     # Free ribosomes (molec/cell).
-    r 
+    input r 
     # Total protein mass of host genes (fg/cell).
-    m_h
+    input m_h
     # Total sum of RRS in host genes (dimensionless).
-    J_host_sum 
+    input J_host_sum 
   end
 
   parameter
