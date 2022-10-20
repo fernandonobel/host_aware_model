@@ -90,6 +90,7 @@ standalone
     mass.mu := cell.mu
     cell.m_h := mass.m_h
     # override nu equation in cell (aa/minute).
-    cell.nu_equation:  cell.nu_t := cell.nu
+    cell.nu_equation:  nu_t := nu
   end
+
 end

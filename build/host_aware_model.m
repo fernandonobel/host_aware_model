@@ -53,7 +53,7 @@ classdef host_aware_model
 				100.0 % cell__p_r__m
 				100.0 % cell__p_nr__m
 				0.01% cell__mu (algebraic)
-				350% cell__r (algebraic)
+				350.0% cell__r (algebraic)
 			];
 		end
 

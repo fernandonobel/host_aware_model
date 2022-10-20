@@ -279,7 +279,7 @@
       </assignmentRule>
       <assignmentRule id="cell__nu_equation" variable="cell__nu_t">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> cell__cell__nu </ci>
+          <ci> cell__nu </ci>
         </math>
       </assignmentRule>
       <assignmentRule id="cell___R18" variable="cell__phi_ht">
