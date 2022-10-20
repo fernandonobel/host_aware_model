@@ -1,10 +1,10 @@
-import './protein_ribosomal.onemodel'
-import './protein_non_ribosomal.onemodel'
+from protein_ribosomal import ProteinRibosomal
+from protein_non_ribosomal import ProteinNonRibosomal
 
 model HostAwareModel
   # Model of a wild-type E.coli. cell.
 
-  input
+  species # input
     # Concentration of substrate in the bioreactor (grams/litre).
     s
     # Total host protein mass (fg/cell).
@@ -77,13 +77,15 @@ model HostAwareModel
 end
 
 standalone
-  import '../mass_equation/mass_interpolated.onemodel'
+  from protein_constitutive import ProteinConstitutive
+  from ..mass_equation.mass_equation import MassEquation
+  from ..mass_equation.mass_interpolated import MassInterpolated
 
   cell = HostAwareModel()
   mass = MassInterpolated()
   
   parameter __t_end = 2000
-  
+
   rule 
     mass.mu := cell.mu
     cell.m_h := mass.m_h
