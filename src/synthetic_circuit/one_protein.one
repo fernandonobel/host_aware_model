@@ -1,7 +1,11 @@
-import '../host_aware_model/protein_constitutive.onemodel'
-import '../host_aware_model/host_aware_model.onemodel'
+from ..host_aware_model.protein_constitutive import ProteinConstitutive
+from ..host_aware_model.protein_ribosomal import ProteinRibosomal
+from ..host_aware_model.protein_non_ribosomal import ProteinNonRibosomal
+from ..host_aware_model.host_aware_model import HostAwareModel
  
-model OneProtein (HostAwareModel)
+model OneProtein
+
+  extends HostAwareModel
 
   # Create protein A.
   p_A = ProteinConstitutive()
@@ -23,8 +27,9 @@ model OneProtein (HostAwareModel)
 end
 
 standalone
-  import '../mass_equation/mass_interpolated.onemodel'
-
+  from ..mass_equation.mass_equation import MassEquation
+  from ..mass_equation.mass_interpolated import MassInterpolated
+  
   mass = MassInterpolated()
   cell = OneProtein()
 

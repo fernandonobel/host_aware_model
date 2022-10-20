@@ -18,12 +18,19 @@ p0.cell__p_A__omega = 0;
 
 x0 = x0(end,:);
 
+%% Simulation without the exogenous circuit.
+
+tspan = [0 500];
+
+[t,x] = ode15s(@(t,x) m.ode(t,x,p0),tspan,x0,opt);
+out = m.simout2struct(t,x,p0);
+
 %% Real simulation using the previous initial condition.
 
-tspan = [m.opts.t_init m.opts.t_end];
+tspan = [m.opts.t_init+500 m.opts.t_end+500];
 
 [t,x] = ode15s(@(t,x) m.ode(t,x,m.p),tspan,x0,opt);
-out = m.simout2struct(t,x,m.p);
+out = concatStruct(out, m.simout2struct(t,x,m.p));
 
 %% Plot result.
 
