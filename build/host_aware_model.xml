@@ -136,7 +136,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell__p_r___R2" variable="cell__p_r__r_t">
+      <assignmentRule id="cell__p_r___R3" variable="cell__p_r__r_t">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
@@ -145,7 +145,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell__p_nr___R3" variable="cell__p_nr__K_C0">
+      <assignmentRule id="cell__p_nr___R4" variable="cell__p_nr__K_C0">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
@@ -192,7 +192,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell__p_nr___R4" variable="cell__p_nr__W">
+      <assignmentRule id="cell__p_nr___R5" variable="cell__p_nr__W">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
@@ -210,57 +210,57 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R5" variable="cell__p_r__nu_t">
+      <assignmentRule id="cell___R7" variable="cell__p_r__nu_t">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__nu_t </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R6" variable="cell__p_r__mu">
+      <assignmentRule id="cell___R8" variable="cell__p_r__mu">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__mu </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R7" variable="cell__p_r__r">
+      <assignmentRule id="cell___R9" variable="cell__p_r__r">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__r </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R8" variable="cell__p_r__m_h">
+      <assignmentRule id="cell___R10" variable="cell__p_r__m_h">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__m_h </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R9" variable="cell__p_r__J_host_sum">
+      <assignmentRule id="cell___R11" variable="cell__p_r__J_host_sum">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__J_host_sum </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R10" variable="cell__p_nr__nu_t">
+      <assignmentRule id="cell___R12" variable="cell__p_nr__nu_t">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__nu_t </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R11" variable="cell__p_nr__mu">
+      <assignmentRule id="cell___R13" variable="cell__p_nr__mu">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__mu </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R12" variable="cell__p_nr__r">
+      <assignmentRule id="cell___R14" variable="cell__p_nr__r">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__r </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R13" variable="cell__p_nr__m_h">
+      <assignmentRule id="cell___R15" variable="cell__p_nr__m_h">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__m_h </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R14" variable="cell__p_nr__J_host_sum">
+      <assignmentRule id="cell___R16" variable="cell__p_nr__J_host_sum">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__J_host_sum </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R15" variable="cell__J_host_sum">
+      <assignmentRule id="cell___R17" variable="cell__J_host_sum">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <plus/>
@@ -279,22 +279,10 @@
       </assignmentRule>
       <assignmentRule id="cell__nu_equation" variable="cell__nu_t">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-            <apply>
-              <times/>
-              <ci> cell__nu </ci>
-              <ci> cell__s </ci>
-            </apply>
-            <apply>
-              <plus/>
-              <ci> cell__s </ci>
-              <ci> cell__K_sc </ci>
-            </apply>
-          </apply>
+          <ci> cell__cell__nu </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell___R16" variable="cell__phi_ht">
+      <assignmentRule id="cell___R18" variable="cell__phi_ht">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
@@ -319,7 +307,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <algebraicRule id="cell___R17">
+      <algebraicRule id="cell___R19">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <minus/>
@@ -378,7 +366,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule id="mass___R18" variable="mass__m_h">
+      <assignmentRule id="mass___R20" variable="mass__m_h">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <plus/>
@@ -397,24 +385,19 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule id="_R19" variable="mass__mu">
+      <assignmentRule id="_R21" variable="mass__mu">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> cell__mu </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="_R20" variable="cell__m_h">
+      <assignmentRule id="_R22" variable="cell__m_h">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> mass__m_h </ci>
         </math>
       </assignmentRule>
-      <assignmentRule id="cell__nu_equation" variable="cell__nu_t">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> cell__nu </ci>
-        </math>
-      </assignmentRule>
     </listOfRules>
     <listOfReactions>
-      <reaction id="cell__p_r___J0" reversible="false">
+      <reaction id="cell__p_r___J2" reversible="false">
         <listOfProducts>
           <speciesReference species="cell__p_r__m" constant="true"/>
         </listOfProducts>
@@ -448,7 +431,7 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction id="cell__p_nr___J1" reversible="false">
+      <reaction id="cell__p_nr___J6" reversible="false">
         <listOfProducts>
           <speciesReference species="cell__p_nr__m" constant="true"/>
         </listOfProducts>
